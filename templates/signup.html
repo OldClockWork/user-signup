@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+ 
+</head>
+<body>
+    <h1>Signup</h1>
+    <br>
+    <br>
+
+    <form action="/signup_confirm" method="POST">
+    
+    <label>
+        Username
+        <input type="text" name="user" value="{{user}}">
+        {{name_error}}
+    </label>
+    <br>
+
+    <label>
+        Password
+        <input type="password" name="password" value="">
+        {{pass_error}}
+    </label>
+    <br>
+
+    <label>
+        Re-enter password
+        <input type="password" name="repassword" value="">
+        {{repass_error}}
+    </label>
+    <br>
+
+    </label>
+        Email (optional)
+        <input type="text" name="email" value="{{email}}">
+        {{email_error}}
+    </label>
+    <br>
+
+    <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
